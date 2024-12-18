@@ -1,0 +1,38 @@
+{
+    "profile": {
+        "rol": "Software Developer",
+        "description":"I am a dynamic and well-organised person who is willing and committed to gane experience in the Software Development. My skills set define me as logical thinking, decisive, problem-solving, accuracy and fast-learner who is committed to continuous education. I always pay attention to details and can work effectively within a team to accomplish key objectives. Software Development has become my new passion and I am eager to demonstrate everything I learned at the Just It company."
+    },
+    "experience": {
+        "first-job-title": "IT Tecnician",
+        "first-job-dates": "04/2019 - 11/2020",
+        "first-job-description": "I worked as an IT Technician providing preventive and corrective maintenance for computers in several companies. I realised that computers are quite interesting and that was the reason why I wanted to be part of the Software Development area.",
+        "second-job-title": "Maths Teacher",
+        "second-job-dates": "07/2016 - 03/2019",
+        "second-job-description": "I used to be a Maths Teacher for a secondary school. I was in charge of years: 7th, 8th, 9th and highschool. Maths is really essential to become a problem-solving person. So, I consider being a Maths Teacher was crucial for me to develop this skiil which is important for Software Development.",
+        "third-job-title": "Quality Inspector",
+        "third-job-dates": "07/2013 - 06/2016",
+        "third-job-description": "I worked in the industrial sector as a Quality Inspector in a company that made clothing. This led me to be aware and pay attention to details to find any someone else's mistake when making the clothes. Fortunately, this skill can be applied in the Software Developement in order to debug or even develop software."
+    },
+    "projects": {
+        "first-project-title":"To-Do List",
+        "first-project-description":"This software was developed using: HTML5, CSS and Javascript. Furthermore, according to its design, this is a responsive website. It allows you to create a list of tasks based on two required fields: task and description.",
+        "first-project-description-2":"It also allows you to mark tasks as completed and from this point you can highlight all of the tasks which have been marked as completed and you can delete all of them if you want to.",
+        "second-project-title":"Calculator",
+        "second-project-description":"This software was also developed using: HTML5, CSS and Javascript. Furthermore, according to its design, this is a responsive website. It allows you to perform basic Maths operations: Addition, Subtraction, Multiplication and Division.",
+        "second-project-description-2":"It also allows you to stablish all operations at zero. Using the AC button you can do this. Additionally, the field where the numbers are displayed is blocked so the user can only type inside it using the number buttons.",
+        "third-project-title":"SQL Project",
+        "third-project-description":"This project is about an ERD which shows a model of a small database consisting of 4 tables: Student, Teacher, Subject and Students_Subjects. You can notice the relationships between the tables which include: one to many and many to many.",
+        "third-project-description-2":"Additionally, you can notice the cardinality between the relationships in these tables. A DDL code was also added to execute and create the tables of this database. Additionally, some SQL queries were added as well to be able to view and execute data manipulation.",
+        "fourth-project-title":"Backend Projects",
+        "fourth-project-description":"On the Python side we can find four projects: Expense Tracker, Paylist, Quiz and Weather App. The user will be able to interact with these systems that support exceptions, arrays, data dictionary, loops and if else structures.",
+        "fourth-project-description-2":"On the Java side we can find the StudentAdminApp project which is a Java 8+ application that connects to a MySql database for which it asks the user for parameters and finally enters a series of data automatically based on the SQL project of this same portfolio.",
+        "databases": "Databases"
+    },
+    "button": {
+        "name": "Code"
+    },
+    "head": {
+        "title": "Portfolio"
+    }
+}

@@ -1,0 +1,423 @@
+
+/**** dark mode section ****/
+/*variables to switch between themes*/
+:root {
+    --primary-color: hsl(214, 84%, 56%);
+    --text-color: hsl(0, 0%, 31%);
+    --bg-color: hsl(0, 0%, 90%);
+    --bg-card-color: hsl(0, 0%, 98%);
+    --border-radius:0.4em;
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
+    --skills-bar-length: 0%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*getting the same colour of the value. removing underline*/
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/*avoiding overflow*/
+img {
+    max-width: 100%;
+    display: block;/*originally, all the imgs are inline, with this the inline div is removed and the corners get the radius*/
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+body.dark {
+    --text-color: hsl(0, 0%, 83%);
+    --bg-color: hsl(0, 0%, 15%);
+    --bg-card-color: hsl(0, 0%, 20%);
+    font-family: sans-serif;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    padding: 0 1.5em;
+    background-color: var(--bg-card-color);
+    transition: var(--transition);
+}
+
+/*aligning the items justify-content: space-between separate them*/
+.switches {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    width: 100%;
+}
+
+.toggle-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.flags {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags_item {
+    width: 30px;
+}
+
+.flags_img {
+    display: block;
+    cursor: pointer;
+}
+
+/*size and position of the icon and text*/
+.toggle-theme_icon {
+    margin-right: 0.5em;
+    width: 25px;
+}
+
+.toggle-theme_text {
+    font-size: 1.0rem;
+}
+
+.colors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 100px;
+}
+
+/*small squares to control colours*/
+.colors-item {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.colors-item_blue {
+    --primary-color: hsl(214, 84%, 56%);
+}
+
+.colors-item_green {
+    --primary-color: hsl(150, 84%, 56%);
+}
+
+.colors-item_purple {
+    --primary-color: hsl(276, 84%, 56%);
+}
+
+.colors-item_orange {
+    --primary-color: hsl(46, 84%, 56%);
+}
+
+.title{
+    text-align: center;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+main {
+    display: grid;
+    padding: 2em;
+    gap: 0.5em;
+}
+
+@media screen and (min-width: 1000px){
+    .main {
+        /*min-content: minimun of content available*/
+        grid-template-columns: 20% 1fr;
+    }
+
+    /*Progress bars cards*/
+    .column-rigth {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, min-content);
+    }
+}
+
+/*Progress bars cards*/
+.column {
+    display: grid;
+    gap: 0.5em;
+}
+
+.card {
+    padding: 1em;
+    background-color: var(--bg-card-color);
+    border-radius: var(--border-radius);
+}
+
+.card_image-container {
+    min-width: 320px;
+    border-radius: var(--border-radius);
+    overflow: hidden;/*to avoid the img corners*/
+}
+
+.card_header {
+    padding: 1em 0;
+}
+
+.card_title {
+    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+}
+
+.card_subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.card_link {
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
+
+.card_link-inline{
+    display: inline-block;
+}
+
+.card_text{
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 1040px){
+    .card_project {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column: 1 / -1;
+    }
+
+    .project {
+        margin-left: 2em;
+    }
+
+    .project_tags {
+        width: 335px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .project_tags2 {
+        width: 335px !important;
+        font-size: 0.8rem !important;
+        margin-right: 5px;
+    }
+
+    .buttons {
+        position: absolute;
+        bottom: 1em;
+    }
+}
+
+.skills{
+    padding: 1em 0;
+}
+
+/*It align the title and the bar vertically put them on a specific point of the car */
+.skills_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*initialising the first bar, giving the same size to the second bar*/
+.skills_bar, 
+.skills_bar::after{
+    position: relative;
+    width: 175px;
+    height: 8px;
+    background-color: #888;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+/*initialising the second bar*/
+.skills_bar::after{
+    content: "";
+    position: absolute;
+    left: -175px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+.skills_header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 175px;
+    margin-left: auto;
+    text-align: center;
+    font-size: 10px;
+}
+
+.skills_tech{
+    margin-top: 0;
+}
+
+
+/*modifiers to fill or move the bar, instead using left or right, it saves resources*/
+.skills_bar-10::after{
+    --skills-bar-length: 10%;
+}
+
+.skills_bar-20::after{
+    --skills-bar-length: 20%;
+}
+
+.skills_bar-30::after{
+    --skills-bar-length: 30%;
+}
+
+.skills_bar-40::after{
+    --skills-bar-length: 40%;
+}
+
+.skills_bar-50::after{
+    --skills-bar-length: 50%;
+}
+
+.skills_bar-60::after{
+    --skills-bar-length: 60%;
+}
+
+
+.skills_bar-70::after{
+    --skills-bar-length: 70%;
+}
+
+.skills_bar-80::after{
+    --skills-bar-length: 80%;
+}
+
+.skills_bar-90::after{
+    --skills-bar-length: 90%;
+}
+/*end modifiers*/
+
+.icon {
+    margin-right: 0.5em;
+}
+
+.experience {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.experience_image {
+    max-width: 18%;
+    margin-right: 1em;
+}
+
+.experience_time {
+    font-size: 0.8rem;
+    margin-bottom: 0.5em;
+}
+
+.experience_job {
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.experience_description {
+    font-size: 0.8rem;
+    margin-bottom: 1.5em;
+}
+
+.project {
+    position: relative;
+}
+
+.project_tags {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    font-size: 0.6rem;
+    width: 275px;
+    margin-bottom: 5%;
+}
+
+.project_tags2 {
+    margin: 0.5em 0;
+    font-size: 0.6rem;
+    width: 275px;
+    margin-bottom: 5%;
+}
+
+.project_tag {
+    padding: 0.4em 0.8em;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transition: var(--transition);
+}
+
+.project_tag3 {
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+}
+
+.button {
+    width: 100px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.button-ghost {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.no-margin {
+    margin: 0;
+}
+
+/*To change modifiers values (effect of filling the bar)*/
+@keyframes skills-bar-fill{
+    to{
+        transform: translateX(var(--skills-bar-length));
+    }
+}

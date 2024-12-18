@@ -1,0 +1,38 @@
+{
+    "profile": {
+        "rol": "Desarrollador de Software",
+        "description":"Soy una persona dinámica y bien organizada, dispuesto y comprometido a adquirir experiencia en el Desarrollo de Software. Mis habilidades me definen como una persona de pensamiento lógico, decisivo, resolutivo, preciso y de rápido aprendizaje, comprometido con la educación continua. Siempre presto atención a los detalles y puedo trabajar eficazmente en equipo para lograr objetivos claves. El desarrollo de software se ha convertido en mi nueva pasión y estoy ancioso por demostrado todo lo aprendido en la empresa Just It. "
+    },
+    "experience": {
+        "first-job-title": "Técnico de TI",
+        "first-job-dates": "04/2019 - 11/2020",
+        "first-job-description": "Me desempeñé como Técnico Informático brindando mantenimiento preventivo y correctivo de computadoras en varias empresas. Me di cuenta que las computadoras son bastante interesantes y por eso quise ser parte del área de Desarrollo de Software.",
+        "second-job-title": "Profesor",
+        "second-job-dates": "07/2016 - 03/2019",
+        "second-job-description": "Yo solía ​​ser profesor de matemáticas en una escuela secundaria. Estuve a cargo de los años: 7mo, 8vo, 9no y bachillerato. Las matemáticas son esenciales para ser una persona que resuelve problemas. Considero que esta experiencia fue crucial para mi para desarrollar esta habilidad.",
+        "third-job-title": "Inspector",
+        "third-job-dates": "07/2013 - 06/2016",
+        "third-job-description": "Trabajé en el sector industrial como Inspector de Calidad en una empresa que confeccionaba ropa. Esto me llevó a estar pendiente y prestar atención a los detalles para encontrar algún error ajeno al confeccionar la ropa. Afortunadamente, esta habilidad se puede aplicar en el desarrollo de software."
+    },
+    "projects": {
+        "first-project-title":"Lista de Tareas",
+        "first-project-description":"Este software fue desarrollado utilizando: HTML5, CSS y Javascript. Ademas acorde a su diseño este es una pagina web responsiva. Te permite crear una lista de tareas basadas en dos campos obligatorios los cuales son task y description.",
+        "first-project-description-2":"Ademas permite marcar las tareas o task como completadas y desde este punto tu puedes resaltar todas las tareas que han sido marcadas como completadas y si tu quieres puedes eliminarlas",
+        "second-project-title":"Calculadora",
+        "second-project-description":"Este software tambien fue desarrollado utilizando: HTML5, CSS y Javascript. Además acorde a su diseño este es una pagina web responsiva. Te permite ejecutar las operaciones básicas de matemáticas: Suma, Resta, Multiplicación y División",
+        "second-project-description-2":"Además permite dejar todas las operaciones a cero. Utilizando el boton AC se puede lograr esto último. Adicionalmente, el campo donde se muestran los números esta bloqueado por lo que el usuario solo puede digitar dentro de él usando los botones numéricos.",
+        "third-project-title":"Proyecto SQL",
+        "third-project-description":"Este proyecto es acerca de un ERD el cual muestra un modelo de una base de datos pequeña que consta de 4 tablas: Student, Teacher, Subject y Students_Subjects. Se puede notar las relaciones entre las tablas las cuales incluye de uno a muchos y de muchos a muchos.",
+        "third-project-description-2":"Además se puede notar la cardinalidad entre las relaciones de estas tablas. Tambien se agrego el codigo DDL para ejecutar y crear las tablas de esta base de datos. Adicionalmente, se agregaron algunas consultas SQL para poder ver y ejecutar la manipulacion de datos ",
+        "fourth-project-title":"Proyectos Backend",
+        "fourth-project-description":"Del lado de Python podremos encontrar cuatro proyectos: Expense Tracker, Paylist, Quiz and Weather App. El usuario será capaz de interactuar con estos sistemas que soportan excepciones, arrays, diccionario de datos, loops y estrcuturas if else.",
+        "fourth-project-description-2":"Del lado de Java encontramos el proyecto StudentAdminApp que es una aplicacion de java 8+ y se conecta con una base de datos MySql para la que pide los parametros al usuario y finalmente ingresa una serie de datos automáticamente basados en el proyecto sql de este mismo portafolio.",
+        "databases": "Base de datos"
+    },
+    "button": {
+        "name": "Código"
+    },
+    "head": {
+        "title": "Portafolio"
+    }
+}
