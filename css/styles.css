@@ -232,6 +232,18 @@ main {
     }
 }
 
+@media screen and (max-width: 1150px){
+    .card_link {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .card_link {
+        font-size: 1.0em;
+    }
+}
+
 .skills{
     padding: 1em 0;
 }
