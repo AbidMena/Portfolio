@@ -204,7 +204,7 @@ main {
     line-height: 1.6;
 }
 
-@media screen and (min-width: 1040px){
+@media screen and (min-width: 1455px){/*before 1040*/
     .card_project {
         display: grid;
         grid-template-columns: min-content 1fr;
