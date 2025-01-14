@@ -244,6 +244,84 @@ main {
     }
 }
 
+@media  (min-width: 1000px) and (max-width: 1020px){
+    .header{
+        width: 1290px;
+    }
+}
+
+@media  (min-width: 1021px) and (max-width: 1051px){
+    .header{
+        width: 1305px;
+    }
+}
+
+@media  (min-width: 1051px) and (max-width: 1080px){
+    .header{
+        width: 1310px;
+    }
+}
+
+@media  (min-width: 1081px) and (max-width: 1100px){
+    .header{
+        width: 1318px;
+    }
+}
+
+@media  (min-width: 1101px) and (max-width: 1171px){
+    .header{
+        width: 1330px;
+    }
+}
+
+@media  (min-width: 1171px) and (max-width: 1196px){
+    .header{
+        width: 1335px;
+    }
+}
+
+@media  (min-width: 1196px) and (max-width: 1230px){
+    .header{
+        width: 1340px;
+    }
+}
+
+@media  (min-width: 1230px) and (max-width: 1260px){
+    .header{
+        width: 1345px;
+    }
+}
+
+@media  (min-width: 1260px) and (max-width: 1280px){
+    .header{
+        width: 1350px;
+    }
+}
+
+@media  (min-width: 1280px) and (max-width: 1300px){
+    .header{
+        width: 1355px;
+    }
+}
+
+@media  (min-width: 1300px) and (max-width: 1320px){
+    .header{
+        width: 1360px;
+    }
+}
+
+@media  (min-width: 1320px) and (max-width: 1340px){
+    .header{
+        width: 1365px;
+    }
+}
+
+@media  (min-width: 1340px) and (max-width: 1370px){
+    .header{
+        width: 1370px;
+    }
+}
+
 .skills{
     padding: 1em 0;
 }
